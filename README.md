@@ -33,7 +33,70 @@ Si le système détecte une température trop elevée ainsi qu'une humidité tr�
 
 ## Répartition des tâches
 
+| Dylan SINAULT | Nicolas BOSIA   | Saad Kahoui   | Jérémy ROQUIN |  Mehdi LARIBI | 
+| :------------ | :-------------  | ------------- | ------------- | ------------- |
+| Configuration passerelle IOT | Liaison entre la passerelle IOT et le service Cloud | Paramétrage des capteurs de flamme et de météo | Liaison entre les Objets Communicant et la passerelle IOT | Configuration du service Cloud et Interface Web |
+
+
 ### Suivi journalier
+
+__10 janvier :__
+
+Notre groupe travaille sur les capteurs Weather Click et Flame Click.
+
+Création Team sur Github, association d’une première interface web hébergée sur Github Pages ( https://cpelyon.github.io/projet-iot-5a-2019-2020-cpenet/ )
+Création compte d’essai Microsoft Azure et démarrage d’un App Service pour explorer l’hébergement cloud.
+Récupération des Datasheets des différents composants / capteurs.
+
+Elaboration du schéma fonctionnel.
+Réflexion sur différents scénarii possibles pour l’utilisation de nos capteurs.
+
+__20 Janvier :__
+
+Dylan : Installation d’OpenBTS et ses dépendances + driver USRP
+
+Mehdi : prise en main d’azure et installation des logiciels elasticsearch qui va nous permettre de creer une base de donées ainsi que de kibana et beats qui permettent de gérer les données et de les traiter dans le cloud
+travail à finir : accéder aux interfaces graphiques de kibana et elasticsearch à l’aide d’une redirection des ports 
+
+Nicolas : Recolte des données via arduino. Le module est fonctionnel. A voir le traitement pour décider a partir de quand on déclenche alarme.
+
+Jérémy : Compréhension module GSM, chinage de code Arduino pour le 
+module SIM800H, importation de librairies avec code semblant utilisable
+
+Saad : Prise en main des différents capteurs, installation des outils nécessaire et debug des problèmes sur Arduino. Mise en place du code pour lire et afficher les différentes informations depuis le capteur Weather et aussi depuis le capteur flame click.
+
+__21 Janvier :__
+
+Dylan : Installation et configuration d’OpenBTS et ses dépendances à travers l’environnement Docker.
+Reprise d’un Dockerfile adapté pour une architecture AMD64 et création d’un nouveau Dockerfile correspondant à l’architecture ARM7 du Raspberry Pi.
+
+Mehdi : abandon de azur et d’elastic search, passage sur ubidots et acquisition via un script python de données de test, acquisition OK et transmission des données de raspberry vers ubidots OK, création des premiers dashboards avec graphique et analyse des données recues  
+travail à finir : finir les dashboards, mettre en place la transmission des mails d’alerte et des seuils d’alerte pour les différentes variables 
+
+Nicolas : installation DBAzure et envoie des données via methode post dans la DB. Configuration ubidots avec mehdi, ecriture du script d’envoi des données à la réception d’un sms en passant en argument les parametres.
+Reste a cleaner et commenter le script puis interconnecter avec reception des sms.
+
+Jérémy : Essai de différentes librairies GSM, débuggage. Essais avec différentes cartes pins. Cablâge physique sur board pour débugguer. Le module GSM pose toujours de nombreux problèmes de compréhension.
+
+Saad : Installation des librairies Json, formatage et codage des données récupérer auprès des capteurs en paquet JSON, déboggage des problèmes GSM et GPRS. Reste à récupérer les paquets JSON et les transmettre sur l’antenne GSM. 
+
+__22 Janvier :__
+
+Dylan : Installation et configuration d’OpenBTS et ses dépendances à travers l’environnement Docker.
+Reprise d’un Dockerfile adapté pour une architecture AMD64 et création d’un nouveau Dockerfile correspondant à l’architecture ARM7 du Raspberry Pi.
+
+Mehdi : réalisation du dashboard comprenant les widgets suivant : suivi en temps réelles de toutes les données : température, altitude, pression et humidité, mise en place du service d’alertes via mail et appel vocal en définissant un seuil d’alerte sur chaque donnée et en combinant divers données telle que temperature superieure à 40° depuis plus de 2 min et humidité en dessous de 2% depuis plus de 2 min etc 
+travail à finir : attendre la transmission via la chaîne de commande afin de vérifier que le dashboard et les alertes s‘actualisent bien, le test est OK avec un script local  
+
+Nicolas : Remaniement du code python d’envoi des donnees a ubidot. Code commenté. Tracabilité des envois dans un fichier de log. Reste à régler le format de ce fichier.
+Experimentation de communication radio ( avec l’adaptateur USB/VGA)
+Premieres recherches autour de 6LoWPAN.
+
+Jérémy : Poursuite de débuggage GSM. Découverte de certains éléments bloquants auparavant, mais toujours impossible de recevoir une réponse aux commandes AT envoyées en serial sur le click.
+Experimentation de communication radio ( avec l’adaptateur USB/VGA)
+Premieres recherches autour de 6LoWPAN.
+
+Saad : Premieres recherches autour de 6LoWPAN.
 
 ## Procédure de mise en place de votre chaîne IoT
 
