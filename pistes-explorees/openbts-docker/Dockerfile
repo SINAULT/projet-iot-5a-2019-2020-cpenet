@@ -1,3 +1,7 @@
+#############################################
+#COPYRIGHT Dylan SINAULT inspired by m1mbert
+#CPELYON - 2017/2020
+#############################################
 FROM ubuntu:xenial
 
 ENV APT="apt-get -y"
