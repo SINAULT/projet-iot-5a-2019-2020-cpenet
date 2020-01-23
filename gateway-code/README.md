@@ -8,8 +8,14 @@
 
 ### Utilisation
 
-Lancer le script read_send.py avec python3 sur le Raspberry. ATTENTION : si le script tourne 
-déjà, le lancer une seconde fois depuis un autre terminal fera planter les deux. \
+Lancer le script read_send.py avec python3 sur le Raspberry. \ 
+ATTENTION : le port de lecture 
+est défini dans le script, il nécessite probablement d'être changé. On peut consulter la liste 
+des ports ouverts avec ```ls /dev/tty*``` \
+ATTENTION : si le script tourne déjà, le lancer une 
+seconde fois depuis un autre terminal fera planter les deux.
+
+### Fonctionnement
 
 Le script read_send.py permet de lire les données envoyées depuis le port série 1 de 
 l'Arduino. Lorsque le script s'exécute, les données au format JSON sont lues en permanence 
