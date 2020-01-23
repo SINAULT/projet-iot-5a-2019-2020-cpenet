@@ -18,7 +18,7 @@ Ainsi, et afin d'avoir une chaine de transmission complète, nous avons pour l'i
 Voici ci-dessous un schéma de fonctionnement du projet. <br />
 <br />
 
-![alt text](https://github.com/CPELyon/projet-iot-5a-2019-2020-cpenet/blob/master/images/iot.png)
+![alt text](https://github.com/CPELyon/projet-iot-5a-2019-2020-cpenet/blob/master/images/schema.png)
 
 ### Capteurs
 

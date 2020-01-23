@@ -26,9 +26,9 @@ def build_payload(variable_1, variable_2, variable_3,variable_4,variable_5):
 
     # On separe chaque donnee
     temperature = data[1]
-    altitude = data[2]
-    pression = data[3]
-    humidite = data[4]
+    pression = data[2]
+    humidite = data[3]
+    altitude = data[4]
     feu = data[5]
 
 
