@@ -14,11 +14,41 @@ Afin d'assurer une tracabilité, les donneés envoyées sont sauvegardées dans 
 <br/>
 Ce script est ensuite appellé par le script read_send.py, qui recupere les données de l'arduino et appelle ce programme ci en passant en argument les données.
 
-## Configuration cloud
-La première étape consiste en la création d'un compte sur ubidots, ensuite dans la partie devices, on effectue le lien entre Ubidots et notre device que l'on nomme comme on le veut, ce nom est important car il devra être le même que celui indiqué dans le code d'envoie des donées.\
-Ensuite la seconde étape consiste en la création des différentes variables que nous allons utilisées : on clique alors sur le "+" pour ajouter une nouvelle variable dont le nom doit aussi être le même que celui indiqué dans le code d'envoi\
-Afin d'avoir une actualisation des donées recues via les capteurs, on doit aller chercher le token dans l'onglet user, ce token est alors à copier dans la partie "TOKEN =" du code d'envoi\
-L'étape suivante consiste à créer un dashboard regroupant les divers widgets et graphiques qui permettent d'analyser et manager les datas\
-on associe un widget et un suivi graphique à chaque variables\
-Enfin, dans la section datas, on peut créer des events, comme des alertes en fonction de l'évolution des parametres qui permettent l'envoie de mail ou même de rapport quotidien des suivis des différentes variables.
+Pour lancer un code en python, on utilise la commande python3 $nom_du_script
+<br/>
 
+On lance donc ici :
+```
+
+python3 read_send.py
+
+```
+## Configuration cloud
+
+La première étape consiste à créer d'un compte sur [Ubidots](https://ubidots.com/) : 
+<br/> 
+<br/> 
+Une fois votre compte créé, on effectue, dans le sous menu **Devices**, le lien entre Ubidots et le device qui doit envoyer les données. Il est important de mettre le même nom dans le code d'envoi et dans l'interface.
+
+<br/>
+
+Il faut ensuite créer les différentes variables : à l'aide du "+", en haut à droite.
+<br/> 
+De la même manière, le nom de la variable doit être identique à celui dans le code d'envoi.
+<br/> 
+<br/> 
+Afin d'avoir une actualisation des donées recues via les capteurs, on doit aller chercher le token dans l'onglet user, ce token est alors à copier dans la partie "TOKEN =" du code d'envoi.
+
+L'étape suivante consiste à créer un dashboard regroupant les divers widgets et graphiques qui permettent d'analyser et manager les datas
+<br/> 
+<br/> 
+On associe ensuite un widget et un suivi graphique à chaque variables
+<br/> 
+Enfin, dans la section **Datas**, on peut créer des évènements et des alertes en fonction de l'évolution des paramètres : ceux ci vont permettre l'envoi de mail ou même de rapport quotidien de suivis des différentes variables.
+<br/> 
+Vous pouvez ainsi personnaliser la configuration du Ubidots pour que celle-ci corresponde parfaitement à votre usage.
+ 
+<br/> 
+<br/> 
+
+![alt text](https://github.com/CPELyon/projet-iot-5a-2019-2020-cpenet/blob/master/images/ubidots.png)
