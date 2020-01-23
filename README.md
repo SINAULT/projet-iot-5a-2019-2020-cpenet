@@ -49,7 +49,7 @@ Création compte d’essai Microsoft Azure et démarrage d’un App Service pour
 Récupération des Datasheets des différents composants / capteurs.
 
 Elaboration du schéma fonctionnel.
-Réflexion sur différents scénarii possibles pour l’utilisation de nos capteurs.
+Réflexion sur différents scénarios possibles pour l’utilisation de nos capteurs.
 
 __20 Janvier :__
 
