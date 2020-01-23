@@ -1,4 +1,4 @@
-# Configuration BeagleBone Black (BBB)
+# Configuration Raspberry
 
 ![alt Raspberry](../images/rasp.jpg)
 
