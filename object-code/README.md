@@ -1,7 +1,7 @@
 # Configuration Arduino ou autre
 Configurai=tion d'un Arduino MEGA 2560
 
-# Pre reguis 
+# Pre requis 
 1. Se rendre sur le site https://www.arduino.cc/, creer un compte et telecharger le plug-in ArduinoCreateAgent-1.1 pour detecter le port Serial.
 Ouvrir le Adruino Web Editor et detecter le port serial.
 Testet le programme Blink présent dans les exemples sur l'arduino pour verifier le fonctionnement 
