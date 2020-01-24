@@ -11,6 +11,11 @@
  
  Cette image peut être utilisée sur des architectures AMD64 et non ARM64. De ce fait, l'objectif était de modifier le Dockerfile afin de le rendre utilisable pour notre type d'architecture.
  
+ Piste adaptée pour une architecture ARM :
+ 
+ https://www.raspberrypi.org/forums/viewtopic.php?t=196658
+ 
+ 
  __La démarche :__
  
 En m'inspirant des lignes du Dockerfile, je suis parti d'une image Docker Ubuntu:xenial vierge et j'ai tenté d'installer ligne par ligne les différentes couches.
