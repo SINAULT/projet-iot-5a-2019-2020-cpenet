@@ -97,7 +97,3 @@ Experimentation de communication radio ( avec l’adaptateur USB/VGA)
 Premieres recherches autour de 6LoWPAN.
 
 Saad : Premieres recherches autour de 6LoWPAN.
-
-## Procédure de mise en place de votre chaîne IoT
-
-## Conclusions et recommandations
