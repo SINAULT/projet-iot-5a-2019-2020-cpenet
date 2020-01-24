@@ -12,6 +12,7 @@ Testet le programme Blink présent dans les exemples sur l'arduino pour verifier
 Les librairies qu'on a utilisé sont mis a disposition sur le git dans le repertoire librairies.
 Pour ajouter des librairies, veuillez suivre ces instrutions :
 
+![alt text](../images/capture.png)
 
 # les capteurs:
 
