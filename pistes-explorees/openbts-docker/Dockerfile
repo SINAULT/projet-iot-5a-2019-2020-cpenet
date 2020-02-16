@@ -32,9 +32,10 @@ RUN ${APT} install asterisk
 
 RUN mkdir BUILDS
 WORKDIR /home/openbts/dev/BUILDS/
-COPY ./liba53_0.1_arm64.deb liba53_0.1_arm64.deb
-COPY ./sipauthserve_5.0_arm64.deb sipauthserve_5.0_arm64.deb
-COPY ./smqueue_5.0_arm64.deb smqueue_5.0_arm64.deb
+COPY ./liba53_0.1_armhf.deb liba53_0.1_armhf.deb
+COPY ./openbts_5.0_armhf.deb openbts_5.0_armhf.deb
+COPY ./sipauthserve_5.0_armhf.deb sipauthserve_5.0_armhf.deb
+COPY ./smqueue_5.0_armhf.deb smqueue_5.0_armhf.deb
 RUN dpkg -i *.deb
 
 WORKDIR /home/openbts/dev/asterisk-config/
@@ -54,10 +55,3 @@ RUN systemctl enable openbts
 
 WORKDIR /OpenBTS
 CMD [ "/sbin/init" ]
-
-RUN ${APT} install openssh-server
-RUN sed -i 's/^Port 22$/Port 39775/' /etc/ssh/sshd_config
-RUN sed -i 's/^PermitEmptyPasswords no$/PermitEmptyPasswords yes/' /etc/ssh/sshd_config
-
-
-
