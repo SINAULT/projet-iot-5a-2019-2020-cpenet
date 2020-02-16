@@ -50,14 +50,10 @@ __POUR DEMARRER UN TERMINAL DANS LE CONTAINER :__
 
 $ docker exec -it openbts /bin/bash
 
-__UNE FOIS ENTRE, VOUS POUVEZ LANCER LE SERVICE OPENBTS :__
+__UNE FOIS ENTRE, VOUS POUVEZ LANCER LES SERVICES :__
 
-$ /home/cxlbadm/openbts_systemd_scripts/openbts-start.sh
+$ /home/openbts/openbts_systemd_scripts/openbts-start.sh
 
 __VOUS SEREZ A PRESENT DANS OPENBTS :__
 
 $ /OpenBTS/
-
-Si tout aurait bien fonctionné nous aurions du avoir la possibilité d'utiliser les commandes CLI d'OpenBTS. ($ /OpenBTS/OpenBTSCLI).
-
-Si vous souhaitez poursuivre il faudra trouver un moyen de compiler la partie OpenBTS en architecture ARM64 et ajouter une couche dans le Dockerfile copiant le fichier .deb .
