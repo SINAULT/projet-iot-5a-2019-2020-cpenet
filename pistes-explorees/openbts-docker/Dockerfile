@@ -46,7 +46,7 @@ RUN sudo cp *.gsm /var/lib/asterisk/sounds/custom/
 
 WORKDIR /home/openbts
 RUN sudo git clone --recursive https://github.com/nadiia-kotelnikova/openbts_systemd_scripts.git
-RUN cp -r /home/cxlbadm/openbts_systemd_scripts/systemd/. /etc/systemd/system/
+RUN cp -r /home/openbts/openbts_systemd_scripts/systemd/. /etc/systemd/system/
 RUN sed -i "s/^Description=sipauthserve$/Description=sipauthserve\nRequires=asterisk.service\nAfter=asterisk.service/" /etc/systemd/system/sipauthserve.service
 RUN sed -i "s/^Description=smqueue$/Description=smqueue\nRequires=sipauthserve.service\nAfter=sipauthserve.service/" /etc/systemd/system/smqueue.service
 RUN sed -i "s/^Description=OpenBTS$/Description=OpenBTS\nRequires=smqueue.service\nAfter=smqueue.service/" /etc/systemd/system/openbts.service
